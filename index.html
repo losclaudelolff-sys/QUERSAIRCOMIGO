@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#f472b6" />
+  <meta name="description" content="Tenho uma pergunta importante pra te fazer... 👀" />
+  <title>Tenho uma pergunta 👀</title>
+
+  <!-- Google Fonts: Outfit (moderna e arredondada) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========================
+       CANVAS DE CONFETES
+       ======================== -->
+  <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+
+  <!-- ========================
+       FUNDO COM PARTÍCULAS
+       ======================== -->
+  <div class="bg-particles" aria-hidden="true">
+    <span class="particle">✨</span>
+    <span class="particle">💫</span>
+    <span class="particle">⭐</span>
+    <span class="particle">✨</span>
+    <span class="particle">💫</span>
+    <span class="particle">⭐</span>
+    <span class="particle">✨</span>
+    <span class="particle">💫</span>
+  </div>
+
+  <!-- ========================
+       WRAPPER PRINCIPAL
+       ======================== -->
+  <main class="main-wrapper" role="main">
+
+    <!-- CARD CENTRAL -->
+    <div class="card" id="main-card">
+
+      <!-- Emoji decorativo do topo -->
+      <div class="card-emoji-top" id="card-emoji" aria-hidden="true">💌</div>
+
+      <!-- Título da tela atual -->
+      <h1 class="card-title" id="card-title">
+        Tenho uma pergunta<br />importante pra te fazer...&nbsp;👀
+      </h1>
+
+      <!-- Subtítulo / mensagem secundária -->
+      <p class="card-subtitle" id="card-subtitle">
+        Quer sair comigo?
+      </p>
+
+      <!-- Área de botões -->
+      <div class="buttons-area" id="buttons-area">
+        <button
+          class="btn btn-primary"
+          id="btn-yes"
+          aria-label="Sim, quero sair"
+        >
+          SIM ❤️
+        </button>
+        <button
+          class="btn btn-secondary"
+          id="btn-no"
+          aria-label="Não quero sair"
+        >
+          NÃO 😭
+        </button>
+      </div>
+
+      <!-- Mensagem extra (aparece depois de ações específicas) -->
+      <p class="card-note hidden" id="card-note"></p>
+
+    </div><!-- /card -->
+
+  </main><!-- /main-wrapper -->
+
+  <script src="script.js"></script>
+</body>
+</html>
